@@ -377,6 +377,16 @@
             "related": ".xml"
           }
         }
+      },
+      "LegacyApp/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/LegacyApp.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LegacyApp.dll": {}
+        }
       }
     }
   },
@@ -970,10 +980,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "LegacyApp/1.0.0": {
+      "type": "project",
+      "path": "../LegacyApp/LegacyApp.csproj",
+      "msbuildProject": "../LegacyApp/LegacyApp.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "LegacyApp >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.8.0",
       "NUnit >= 3.14.0",
       "NUnit.Analyzers >= 3.9.0",
@@ -1007,7 +1023,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\s28794\\Desktop\\APBD04\\zadanie\\LegacyApp\\LegacyApp.csproj": {
+              "projectPath": "C:\\Users\\s28794\\Desktop\\APBD04\\zadanie\\LegacyApp\\LegacyApp.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
